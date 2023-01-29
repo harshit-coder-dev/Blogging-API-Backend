@@ -1,0 +1,9 @@
+1 -> Add dependency (io.jsonwebtoken)
+2 -> Create JWT authenticationEntryPoint implements AuthenticationEntryPoint(it has a method for override , interface ko parent banane ke liye implement,
+    ye method throw exception when unauthorized person want to access)
+3 -> Create JWTTokenHelper(can any name)
+4 -> JwtAuthenticationFilter extends OnceRequestFilter( ye class check krega header hai ya nhi) have some points in it. It have 5 steps
+5 -> Create JwtAuthResponse(any name) (type of token ,data- user details)
+6 -> Configure JWT in spring security config
+7 -> Create login api to return token
+8 -> Test the application
