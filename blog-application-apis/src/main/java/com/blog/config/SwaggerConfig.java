@@ -45,7 +45,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo getInfo() {
-        return new ApiInfo("Blogging Application Backend Course", "This Project By Harshit Awasthi", "1.0", "Terms of Service",
+        return new ApiInfo("Blogging Application API", "This Project By Harshit Awasthi", "1.0", "Terms of Service",
                 new Contact("Harshit", "https://github.com/Hartumpa", "nitCivil2018@gmail.com"),
                 "Licence of Apis https://hartumpa.github.io/", "Api Licence URL", Collections.emptyList());
     }

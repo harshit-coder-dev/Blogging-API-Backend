@@ -3,6 +3,8 @@ package com.blog;
 import com.blog.config.BlogConstants;
 import com.blog.entities.Role;
 import com.blog.repositories.RoleRepo;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.servers.Server;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -14,6 +16,11 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.List;
 
+@OpenAPIDefinition(
+        servers = {
+                @Server(url = "/", description = "Default Server URL")
+        }
+)
 @SpringBootApplication
 @EnableWebMvc
 public class BlogApplicationApisApplication implements CommandLineRunner {
